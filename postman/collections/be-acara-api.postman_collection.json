@@ -69,6 +69,47 @@
             }
           },
           "response": []
+        },
+        {
+          "name": "me",
+          "id": "93bd80a6-182a-4a1e-b5ab-9fd3fb94c0c9",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{TOKEN}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"identifier\": \"kevin@gmail.com\",\r\n    \"password\": \"kevin123\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BASE_URL}}/auth/me",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "auth",
+                "me"
+              ]
+            }
+          },
+          "response": []
         }
       ],
       "id": "cc49d745-d9f5-4bc0-b5fa-99a782a40105"
