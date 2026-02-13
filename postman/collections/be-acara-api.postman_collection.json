@@ -38,6 +38,37 @@
             }
           },
           "response": []
+        },
+        {
+          "name": "login",
+          "id": "68925963-e3ac-48ce-82c8-acfd88ca092d",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"identifier\": \"kevin@gmail.com\",\r\n    \"password\": \"kevin123\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{BASE_URL}}/auth/login",
+              "host": [
+                "{{BASE_URL}}"
+              ],
+              "path": [
+                "auth",
+                "login"
+              ]
+            }
+          },
+          "response": []
         }
       ],
       "id": "cc49d745-d9f5-4bc0-b5fa-99a782a40105"
