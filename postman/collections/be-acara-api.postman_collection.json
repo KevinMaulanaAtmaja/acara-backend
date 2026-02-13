@@ -6,10 +6,10 @@
   },
   "item": [
     {
-      "name": "dummy",
+      "name": "auth",
       "item": [
         {
-          "name": "dummy",
+          "name": "register",
           "id": "1d8abd3a-b853-471d-bc10-09f44ac8d2b2",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -19,15 +19,21 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": ""
+              "raw": "{\r\n    \"fullname\": \"Kevin Maulana\",\r\n    \"username\": \"kevin\",\r\n    \"email\": \"kevin@gmail.com\",\r\n    \"password\": \"kevin123\",\r\n    \"passwordConfirmation\": \"kevin123\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
             },
             "url": {
-              "raw": "{{BASE_URL}}/dummy",
+              "raw": "{{BASE_URL}}/auth/register",
               "host": [
                 "{{BASE_URL}}"
               ],
               "path": [
-                "dummy"
+                "auth",
+                "register"
               ]
             }
           },

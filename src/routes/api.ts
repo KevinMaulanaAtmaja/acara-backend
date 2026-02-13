@@ -1,8 +1,8 @@
 import expess from "express";
-import dummyController from "../controllers/dummy.controller";
+import authController from "../controllers/auth.controller";
 
 const router = expess.Router();
 
-router.get("/dummy", dummyController.dummy);
+router.get("/auth/register", authController.register);
 
 export default router;
